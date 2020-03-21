@@ -1,0 +1,5 @@
+**/.terraform
+**/terraform.tfstate*
+
+# IMPORTANT ignore service account json
+*.json
