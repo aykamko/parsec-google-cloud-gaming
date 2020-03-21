@@ -16,3 +16,10 @@
   1. Click on your newly created instance called `parsec-1`
   1. Near the top of the page, click "Set Windows password"
   1. Follow the instructions and **save the generated password**
+1. Use RDP to connect to Windows VM
+  1. Click "RDP" near the top of the instance info page
+  1. Follow the instructions until you get to the remote desktop
+1. Follow instructions at https://github.com/jamesstringerparsec/Parsec-Cloud-Preparation-Tool
+  - do this: https://www.dropbox.com/s/aazhorq9caiixvv/Screenshot%202020-03-21%2012.41.03.png?dl=0
+  - also:
+    - setup auto shutdown (30 min)

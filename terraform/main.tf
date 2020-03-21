@@ -1,6 +1,8 @@
 locals {
   region = "us-west1"
   zone = "us-west1-b"
+  vnc_ingress_rule_name = "vnc-ingress"
+  parsec_ingress_rule_name = "parsec-ingress"
 }
 
 provider "google" {
@@ -19,7 +21,10 @@ resource "google_compute_instance" "parsec-1" {
   zone         = local.zone
   machine_type = "n1-standard-8"
 
-  tags = ["vnc-ingress"]
+  tags = [
+    local.vnc_ingress_rule_name,
+    local.parsec_ingress_rule_name,
+  ]
 
   boot_disk {
     initialize_params {
@@ -51,12 +56,8 @@ resource "google_compute_instance" "parsec-1" {
   }
 }
 
-data "google_compute_network" "default" {
-  name = "default-${local.region}"
-}
-
-resource "google_compute_firewall" "default" {
-  name    = "vnc-ingress"
+resource "google_compute_firewall" "vnc-ingress" {
+  name    = local.vnc_ingress_rule_name
   network = "default"
 
   // TODO: make this more secure by specifying only my IP
@@ -67,5 +68,20 @@ resource "google_compute_firewall" "default" {
     ports    = ["5900"]
   }
 
-  target_tags = ["vnc-ingress"]
+  target_tags = [local.vnc_ingress_rule_name]
+}
+
+resource "google_compute_firewall" "parsec-ingress" {
+  name    = local.parsec_ingress_rule_name
+  network = "default"
+
+  // TODO: make this more secure by specifying only my IP
+  source_ranges = ["0.0.0.0/0"]
+
+  allow {
+    protocol = "udp"
+    ports    = ["8000-8002"]
+  }
+
+  target_tags = [local.parsec_ingress_rule_name]
 }
