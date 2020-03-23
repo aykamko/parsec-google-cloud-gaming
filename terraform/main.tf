@@ -3,6 +3,7 @@ locals {
   zone = "us-west1-b"
   vnc_ingress_rule_name = "vnc-ingress"
   parsec_ingress_rule_name = "parsec-ingress"
+  make_preemptible = false
 }
 
 provider "google" {
@@ -30,7 +31,7 @@ resource "google_compute_instance" "parsec-1" {
   boot_disk {
     initialize_params {
       image = data.google_compute_image.windows_server_2019_desktop.self_link
-      size = 150
+      size = 100
       type = "pd-ssd"
     }
   }
@@ -52,8 +53,9 @@ resource "google_compute_instance" "parsec-1" {
   }
 
   scheduling {
-    preemptible = true
+    preemptible = local.make_preemptible
     automatic_restart = false
+    on_host_maintenance = "TERMINATE"
   }
 }
 

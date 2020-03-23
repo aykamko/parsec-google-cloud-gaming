@@ -30,4 +30,5 @@ TODO (unfinished instructions)
 ====
 1. Install latest NVIDIA GRID driver from Google Cloud bucket
   - https://storage.googleapis.com/nvidia-drivers-us-public/GRID/GRID10.1/442.06_grid_win10_server2016_server2019_64bit_international.exe
+  - Maybe set GPU into WDDM mode: https://docs.nvidia.com/gameworks/content/developertools/desktop/nsight/tesla_compute_cluster.htm
 1. For MBP, set custom resolution
