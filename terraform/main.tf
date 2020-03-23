@@ -22,6 +22,7 @@ resource "google_compute_instance" "parsec-1" {
   machine_type = "n1-standard-8"
 
   tags = [
+    "https-server",
     local.vnc_ingress_rule_name,
     local.parsec_ingress_rule_name,
   ]
@@ -71,6 +72,7 @@ resource "google_compute_firewall" "vnc-ingress" {
   target_tags = [local.vnc_ingress_rule_name]
 }
 
+// https://support.parsecgaming.com/hc/en-us/articles/115002701631-Required-Dependencies-To-Set-Up-Your-Own-Cloud-Gaming-PC-Without-Parsec-Templates
 resource "google_compute_firewall" "parsec-ingress" {
   name    = local.parsec_ingress_rule_name
   network = "default"
@@ -80,7 +82,7 @@ resource "google_compute_firewall" "parsec-ingress" {
 
   allow {
     protocol = "udp"
-    ports    = ["8000-8002"]
+    ports    = ["8000-8011"]
   }
 
   target_tags = [local.parsec_ingress_rule_name]

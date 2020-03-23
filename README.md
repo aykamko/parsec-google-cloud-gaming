@@ -24,8 +24,10 @@
     - also:
         - setup auto shutdown (30 min)
 1. Make the second display the Primary display
+1. Set Parsec host port to 8000
 
 TODO (unfinished instructions)
 ====
-1. Install latest driver from NVIDIA website
+1. Install latest NVIDIA GRID driver from Google Cloud bucket
+  - https://storage.googleapis.com/nvidia-drivers-us-public/GRID/GRID10.1/442.06_grid_win10_server2016_server2019_64bit_international.exe
 1. For MBP, set custom resolution
