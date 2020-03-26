@@ -82,7 +82,7 @@ This should take about 30 minutes to set up. Could take longer depending on how 
 1. Use RDP to connect to Windows VM
     1. Click "RDP" near the top of the instance info page
     1. Follow the instructions until you get to the remote desktop
-1. Set up Parsec
+1. Once your on the remote desktop, let's set up Parsec. **This step takes a while.**
     1. Follow steps 3 and 4 at https://github.com/jamesstringerparsec/Parsec-Cloud-Preparation-Tool
     1. Open "Auto Login" on the desktop and run "Setup Auto Login"
     1. Run "Setup Auto Shutdown" on the desktop. Choose a reasonable time (I use 30 minutes)
