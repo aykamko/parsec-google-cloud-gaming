@@ -19,11 +19,11 @@ We just need to set up two things:
 1. [Sign up for Google Cloud.](https://cloud.google.com/gcp/) Choose the Google account you'll want to get your billed under.
 1. Once you're at the main Google Cloud console page ([console.cloud.google.com](https://console.cloud.google.com/)), let's create a new Project
    1. Click `My First Project` at the top of the page
-        ![](https://www.dropbox.com/s/vduxhpl4dgwnhw5/Screenshot%202020-03-25%2020.28.47.png?dl=0)
+        ![my first project](https://www.dropbox.com/s/vduxhpl4dgwnhw5/Screenshot%202020-03-25%2020.28.47.png?dl=0)
    1. Click `NEW PROJECT` at the top-right of the modal
    1. Call your new project `Parsec`
    1. Wait until your new project has finished creating
-1. Using the search bar up top, search 'vm instances` and click the result labeled "Instances"
+1. Using the search bar up top, search `vm instances` and click the result labeled "Instances"
        ![](https://www.dropbox.com/s/0uzkuqcssfim1oa/Screenshot%202020-03-25%2020.36.46.png?dl=0)
    1. You'll be brought to a screen saying
    
@@ -72,8 +72,8 @@ We just need to set up two things:
     
 1. Set a Windows password
     1. [Go back to the Google Cloud console](https://console.cloud.google.com/)
-    1. Using the search bar up top, search 'vm instances` and click the result labeled "Instances"
-         ![](https://www.dropbox.com/s/0uzkuqcssfim1oa/Screenshot%202020-03-25%2020.36.46.png?dl=0)
+    1. Using the search bar up top, search `vm instances` and click the result labeled "Instances"
+        ![](https://www.dropbox.com/s/0uzkuqcssfim1oa/Screenshot%202020-03-25%2020.36.46.png?dl=0)
     1. Click on your newly created instance called `parsec-1`
     1. Near the top of the page, click "Set Windows password"
         ![](https://www.dropbox.com/s/aopu2eouf3notxh/Screenshot%202020-03-25%2021.00.15.png?dl=0)
@@ -86,7 +86,7 @@ We just need to set up two things:
     1. Open "Auto Login" on the desktop and run "Setup Auto Login"
     1. Run "Setup Auto Shutdown" on the desktop. Choose a reasonable time (I use 30 minutes)
     1. Open Google Chrome and download the latest Google Cloud NVIDIA driver from here: https://storage.googleapis.com/nvidia-drivers-us-public/GRID/GRID10.1/442.06_grid_win10_server2016_server2019_64bit_international.exe
-    1. Run the download .exe to install the driver
+    1. Run the downloaded .exe to install the driver
 1. Set up VNC
     1. From the start menu, search "tightvnc" and run "TightVNC Service - Control Interface"
         ![](https://www.dropbox.com/s/f61rxic04000e5d/Screenshot%202020-03-25%2021.07.27.png?dl=0)
@@ -124,10 +124,6 @@ We just need to set up two things:
 At this point, you can install Steam and whatever games you want. Voila!
 
 **Don't forget to turn off your machine when you're not using it, or you'll be charged!** Google Cloud charges by the second.
-       
-    
-1. Make the second display the Primary display
-1. Set Parsec host port to 8000
 
 ----
 
