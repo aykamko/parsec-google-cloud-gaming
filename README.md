@@ -15,6 +15,7 @@ We just need to set up two things:
 
 ### Guide
 
+This should take about 30 minutes to set up. Could take longer depending on how fast Google responds to you via email after step 4.
 
 1. [Sign up for Google Cloud.](https://cloud.google.com/gcp/) Choose the Google account you'll want to get your billed under.
 1. Once you're at the main Google Cloud console page ([console.cloud.google.com](https://console.cloud.google.com/)), let's create a new Project
