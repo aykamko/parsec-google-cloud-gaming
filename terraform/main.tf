@@ -32,7 +32,7 @@ resource "google_compute_instance" "parsec-1" {
     initialize_params {
       image = data.google_compute_image.windows_server_2019_desktop.self_link
       size = 100
-      type = "pd-ssd"
+      type = "pd-standard"  // change to SSD if you want, but costs 4x more
     }
   }
 
