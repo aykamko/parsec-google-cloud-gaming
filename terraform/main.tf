@@ -1,4 +1,6 @@
 locals {
+  project_id = "<REPLACE ME WITH YOUR PROJECT ID>"
+
   region = "us-west1"
   zone = "us-west1-b"
   vnc_ingress_rule_name = "vnc-ingress"
@@ -8,7 +10,7 @@ locals {
 
 provider "google" {
   credentials = file("../account.json")
-  project     = "parsec-271801"
+  project     = local.project_id
   region      = local.region
 }
 

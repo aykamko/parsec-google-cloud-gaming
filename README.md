@@ -60,9 +60,13 @@ This should take about 30 minutes to set up. Could take longer depending on how 
     1. Click "Create Key" at the bottom, choose JSON
     1. Save the key as `account.json` to root of this repo
 1. Wait until Google Cloud approves your GPU quota increase from step 4.
-1. Create the virtual machine. 
-   - **WARNING!** Don't stop following the guide here! This step will start your cloud machine and you will start getting charged. **Make sure to stop the machine before leaving!!!**
-   - Use [Terraform](https://www.terraform.io/) to automatically set up your machine. Open terminal and run the following
+1. Create the virtual machine. You'll need to open the Terminal for this step.
+   > **WARNING!** Don't stop following the guide here! This step will start your cloud machine and you will start getting charged. **Make sure to stop the machine before leaving!!!**
+   1. In the Google Cloud console, copy your project ID from the dropdown at the top.
+        ![](https://dl.dropboxusercontent.com/s/1i3u6zdj2y3vuqj/Screenshot%202020-03-28%2018.26.03.png?dl=0)
+        ![](https://dl.dropboxusercontent.com/s/m0u54c7wslcs9ji/Screenshot%202020-03-28%2018.21.26.png?dl=0)
+   2. Edit the file `terraform/main.tf` and change the placeholder at the top with your project ID.
+   3. Use [Terraform](https://www.terraform.io/) to automatically set up your machine. Open terminal and run the following
     
     ```bash
     brew install terraform
