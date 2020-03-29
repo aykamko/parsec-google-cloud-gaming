@@ -32,7 +32,7 @@ This should take about 30 minutes to set up. Could take longer depending on how 
    
         > Compute Engine is getting ready.
         
-      Wait for this message to go away.
+      Wait for this message to go away — this should take a few minutes.
    1. Click `Create` __but don't do anything else__. Move on to the next step.
 1. Request an increase to your GPU quota. We need to ask Google Cloud to let us create a machine with a GPU attached.
    1. In the search bar up top, search `all quotas` and click the result
