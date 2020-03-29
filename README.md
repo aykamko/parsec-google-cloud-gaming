@@ -1,4 +1,4 @@
-# Google Cloud + Parsec Gaming PC
+# Parsec + Google Cloud Gaming PC
 
 ### What is this?
 
