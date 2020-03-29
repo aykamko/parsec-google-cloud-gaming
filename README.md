@@ -37,7 +37,7 @@ This should take about 30 minutes to set up. Could take longer depending on how 
 1. Request an increase to your GPU quota. We need to ask Google Cloud to let us create a machine with a GPU attached.
    1. In the search bar up top, search `all quotas` and click the result
         ![c](https://dl.dropboxusercontent.com/s/zv6wwj4narkxr1l/Screenshot%202020-03-25%2020.34.11.png?dl=0)
-   1. Under the dropdowns, you'll see a banner asking you to upgrade your account. Click "Upgrade Account" (twice), then refresh the page
+   1. Under the dropdowns, you'll see a banner asking you to upgrade your account. Once again, **make sure that your active project is the `Parsec` project.** If it is, click "Upgrade Account" (twice), then refresh the page
         ![d](https://dl.dropboxusercontent.com/s/4sj1brjrw158i40/Screenshot%202020-03-25%2020.42.21.png?dl=0)
    1. Click the dropdown for `Metrics` and click `None` to deselect everything.
    1. Search `GPUs all` and select the only option
@@ -46,13 +46,13 @@ This should take about 30 minutes to set up. Could take longer depending on how 
        ![f](https://dl.dropboxusercontent.com/s/l75j4wqeqcjy608/Screenshot%202020-03-25%2020.43.49.png?dl=0)
    1. In the right-side drawer:
       - Fill out your info and click "Next"
-      - Request a new quota of `1` (up from zero) and provide a request description — be creative
-      - Click "Done" on the small box and then click "Submit Request"
+      - Request a new quota of `1` (up from zero) and provide a request description — be creative 🤷‍♂️ 
+      - Click "Done" on the **small box first**, and then click "Submit Request"
    1. Google now has to approve your quota increase. They'll send you an email when they confirm. This may take a while, but in practice it takes less than an hour. Move on to the next step while you wait.
 
 1. [Download and install Parsec](https://parsecgaming.com/). Open Parsec and make an account. You'll eventually need to sign in on the cloud machine as well, so **remember your username+password**!
-1. [Download and install VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). You may need this later to connect and use the remote desktop on your cloud machine.
-1. Download the default Service Account key
+1. [Download and install VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). You will this later to set up GPU and display settings using remote desktop on your cloud machine.
+1. Download the default Service Account key. This will give Terraform permission to create your machine later in step 9.
     1. [Go back to the Google Cloud console](https://console.cloud.google.com/)
     1. Search `credentials` at the top and click "APIs & Services"
         ![g](https://dl.dropboxusercontent.com/s/0ussa3kfm19aa42/Screenshot%202020-03-25%2020.48.26.png?dl=0)
@@ -63,7 +63,8 @@ This should take about 30 minutes to set up. Could take longer depending on how 
     1. Save the key as `account.json` to root of this repo
 1. Wait until Google Cloud approves your GPU quota increase from step 4.
 1. Create the virtual machine. You'll need to open the Terminal for this step.
-   > **WARNING!** Don't stop following the guide here! This step will start your cloud machine and you will start getting charged. **Make sure to stop the machine before leaving!!!**
+
+    **⚠️⚠️⚠️ WARNING! ⚠️⚠️⚠️** This step will start your cloud machine and **you will start getting charged!** Don't stop following the guide here, or make sure to stop the machine before leaving!!!
    1. In the Google Cloud console, copy your project ID from the dropdown at the top.
         ![](https://dl.dropboxusercontent.com/s/1i3u6zdj2y3vuqj/Screenshot%202020-03-28%2018.26.03.png?dl=0)
         ![](https://dl.dropboxusercontent.com/s/m0u54c7wslcs9ji/Screenshot%202020-03-28%2018.21.26.png?dl=0)
@@ -87,7 +88,7 @@ This should take about 30 minutes to set up. Could take longer depending on how 
     1. Follow the instructions and **save the generated password**
 1. Use RDP to connect to Windows VM
     1. Click "RDP" near the top of the instance info page
-    1. Follow the instructions until you get to the remote desktop
+    1. Follow Google's instructions until you get to the remote desktop — the Chrome extension will work just fine
 1. Once your on the remote desktop, let's set up Parsec. **This step takes a while.**
     1. Follow steps 3 and 4 at https://github.com/jamesstringerparsec/Parsec-Cloud-Preparation-Tool
     1. Open "Auto Login" on the desktop and run "Setup Auto Login"
