@@ -24,7 +24,8 @@ This should take about 30 minutes to set up. Could take longer depending on how 
    1. Click `NEW PROJECT` at the top-right of the modal
    1. Call your new project `Parsec`
    1. Wait until your new project has finished creating
-   1. **Important:** Use the same button to change to your new `Parsec` project
+   1. **Important:** Use the same button to change to your new `Parsec` project. If you do this correctly, you should see this:
+        ![](![](https://dl.dropboxusercontent.com/s/1i3u6zdj2y3vuqj/Screenshot%202020-03-28%2018.26.03.png?dl=0))
 1. Using the search bar up top, search `vm instances` and click the result labeled "Instances"
        ![b](https://dl.dropboxusercontent.com/s/0uzkuqcssfim1oa/Screenshot%202020-03-25%2020.36.46.png?dl=0)
    1. You'll be brought to a screen saying
