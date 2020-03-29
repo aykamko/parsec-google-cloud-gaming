@@ -97,7 +97,7 @@ This should take about 30 minutes to set up. Could take longer depending on how 
          ![k](https://dl.dropboxusercontent.com/s/f61rxic04000e5d/Screenshot%202020-03-25%2021.07.27.png?dl=0)
     1. In the bottom-right icon tray, click the TightVNC icon
          ![l](https://dl.dropboxusercontent.com/s/qp5ce5w8y37aydz/Screenshot%202020-03-25%2021.07.44.png?dl=0)
-    1. Use your Windows password to unlock the settings
+    1. Use password `4ubg9sde` to unlock the settings
     1. Change the VNC password to be your Windows password
 1. Restart the host and connect with VNC.
     1. Restart Windows using the start menu
