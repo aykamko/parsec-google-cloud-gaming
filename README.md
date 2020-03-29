@@ -6,10 +6,10 @@ This repo sets you up to play games like [Doom Eternal](https://store.steampower
 
 We just need to set up two things:
 
+- [A Parsec account](https://parsecgaming.com/). This lets us stream the screen from the server at super low latency. It's sorta like [Google Stadia](https://store.google.com/product/stadia?gclid=CjwKCAjwguzzBRBiEiwAgU0FT7GirMrN5XiJOHrRMcFNXx6Y1a3BGxoZ2mX1wEKSO5e-3urfE4NeoxoCwd8QAvD_BwE).
 - A Google Cloud virtual machine with a [Telsa P100 GPU](https://www.microway.com/knowledge-center-articles/comparison-of-nvidia-geforce-gpus-and-nvidia-tesla-gpus/) running Windows Server 2019
   - If you haven't signed up for Google Cloud before, you get **$300 in credits for free!**
   - The virtual machine **costs about $1.30/hour** to run. Don't worry about getting overcharged — we'll set up your machine to shut down automatically when you're done playing
-- [A Parsec account](https://parsecgaming.com/). This lets us stream the screen from the server at super low latency. It's sorta like [Google Stadia](https://store.google.com/product/stadia?gclid=CjwKCAjwguzzBRBiEiwAgU0FT7GirMrN5XiJOHrRMcFNXx6Y1a3BGxoZ2mX1wEKSO5e-3urfE4NeoxoCwd8QAvD_BwE).
 
 ---
 
